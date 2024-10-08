@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
@@ -9,12 +9,11 @@ module.exports = {
      * Example:
      * await queryInterface.createTable('users', { id: Sequelize.INTEGER });
      */
-    return queryInterface.changeColumn('Users', 'email', {
+    return queryInterface.changeColumn("Users", "email", {
       type: Sequelize.STRING,
       // definimos el campo como único
       unique: true,
-    })
-
+    });
   },
 
   async down(queryInterface, Sequelize) {
@@ -24,5 +23,5 @@ module.exports = {
      * Example:
      * await queryInterface.dropTable('users');
      */
-  }
+  },
 };

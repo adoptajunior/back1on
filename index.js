@@ -15,6 +15,8 @@ app.use(express.json())
 app.use('/users', require('./routes/users'))
 // importamos nuestras rutas de posts
 app.use('/posts', require('./routes/posts'))
+// importamos nuestras rutas de products
+app.use('/products', require('./routes/products'))
 
 // ejecutamos el middleware
 app.use(typeError)
